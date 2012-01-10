@@ -11,6 +11,21 @@ Open a terminal window in the directory where the sources of your flex applicati
 In your favorite editor (or in other terminal window) run fcsend.sh, the arguments are passed directly to the compiler.
 
 
+VIM Example
+===========
+
+    :set makeprg=fcsend.sh\ compile\ $*
+    :set errorformat=%f(%l):\ \ %s:\ %m
+    
+to Full compile the current file:
+
+    :!fcsend.sh mxmlc %
+    
+for incremental compile the current file:
+    
+    :make n  (n is the target id)
+
+
 License
 =======
 
