@@ -15,7 +15,7 @@ VIM Example
 ===========
 
     :set makeprg=fcsend.sh\ compile\ $*
-    :set errorformat=%f(%l):\ \ %s:\ %m
+    :set errorformat=%f(%l):\ \ Error:\ %m
     
 to Full compile the current file:
 
